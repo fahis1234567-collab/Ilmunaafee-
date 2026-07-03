@@ -21,6 +21,7 @@ const db = getFirestore(app);
 const postContainer = document.getElementById("posts");
 
 async function loadPosts() {
+  console.log("Loading posts...");
   const querySnapshot = await getDocs(collection(db, "posts"));
 
   querySnapshot.forEach((doc) => {
