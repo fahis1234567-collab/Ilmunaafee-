@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Article</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+.article{
+padding:20px;
+max-width:800px;
+margin:auto;
+}
+
+.article img{
+width:100%;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+.article h1{
+color:#f4c430;
+margin-bottom:10px;
+}
+
+.article p{
+line-height:1.8;
+font-size:18px;
+color:#ddd;
+}
+
+.back{
+display:inline-block;
+margin:20px;
+color:#f4c430;
+text-decoration:none;
+font-size:18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<a class="back" href="index.html">⬅ Back</a>
+
+<div class="article">
+
+<img id="img">
+
+<h1 id="title"></h1>
+
+<p id="content"></p>
+
+</div>
+
+<script>
+
+const params=new URLSearchParams(location.search);
+
+document.getElementById("title").innerText=params.get("title");
+
+document.getElementById("img").src=params.get("img");
+
+document.getElementById("content").innerText=params.get("content");
+
+</script>
+
+</body>
+</html>
