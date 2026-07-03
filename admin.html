@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ilmunaafee Admin</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+.container{
+max-width:600px;
+margin:20px auto;
+padding:20px;
+}
+
+input,textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:10px;
+border:1px solid #ccc;
+}
+
+textarea{
+height:180px;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#f4c430;
+border:none;
+border-radius:10px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h2>➕ New Post</h2>
+
+<input id="title" placeholder="Title">
+
+<input id="category" placeholder="Category">
+
+<input id="date" placeholder="Date">
+
+<input id="image" placeholder="Image URL">
+
+<textarea id="content" placeholder="Content"></textarea>
+
+<button id="publish">Publish</button>
+
+</div>
+
+<script type="module" src="admin.js"></script>
+
+</body>
+</html>
