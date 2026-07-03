@@ -23,7 +23,7 @@ const postContainer = document.getElementById("posts");
 async function loadPosts() {
   console.log("Loading posts...");
  
-  const querySnapshot = await getDocs(collection(db, "posts"));
+  const querySnapshot = await getDocs(collection(db, "Posts"));
 console.log(querySnapshot.size);
   
   querySnapshot.forEach((doc) => {
